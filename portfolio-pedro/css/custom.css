@@ -24,10 +24,15 @@
     font-family: var(--font-action);
 }
 
-span .navbar-toggler-icon{
-    color: red;
-    border-color: red;
+.navbar-toggler .hamburguer{
+    color: #fff;
+    border-color: #fff;
   }
+
+.hamburguer-black{
+    color: #000;
+    border-color: #000;
+}
 
 .cor-bg{
     color: black;
