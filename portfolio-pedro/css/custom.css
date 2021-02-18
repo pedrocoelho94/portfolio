@@ -5,71 +5,36 @@
     text-decoration: none;
 }
 
-.hamburguer{
-    width: 2rem;
-    height: 1.7rem;
-    position: fixed;
-    z-index: 9999;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    cursor: pointer;
+.transparent{
+    background-color: transparent;
+    transition: background ease-out 0.2s;
 }
 
-.show-menu .hamburguer{
-    right: 17rem;
+.bg{
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 23px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 23px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 23px -12px rgba(0,0,0,0.75);
+
 }
 
-.line{
-    width: 100%;
-    height: 0.15rem;
-    background-color: #fff;
-    box-shadow: 0.1rem 0.1rem 1px #000;
-    transition: transform 1s;
-}
-
-.show-menu #line1{
-    transform: rotate(45deg) translate(.3rem, .45rem);
-}
-
-.show-menu #line2{
-    opacity: 0;
-    visibility: hidden;
-}
-
-.show-menu #line3{
-    transform: rotate(-45deg)  translate(.3rem, -.45rem);
-}
-
-.hamburguer span{
-    position: absolute;
-    left: 3rem;
-    height: 2rem;
-    width: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #503061;
-    color: #fff;
+.cor-fixa{
+    color: white;
+    text-transform: uppercase;
     font-family: var(--font-action);
-    opacity: 0;
 }
 
-.hamburguer span::before{
-    content: "";
-    position: absolute;
-    border-right: .5rem solid #503061;
-    border-top: .5rem solid transparent;
-    border-left: .5rem solid transparent;
-    border-bottom: .5rem solid transparent;
-    left: -1rem;
+span .navbar-toggler-icon{
+    color: red;
+    border-color: red;
+  }
 
+.cor-bg{
+    color: black;
 }
 
-.show-menu .hamburguer:hover span{
-    opacity: 1;
+.bloco{
+    margin-bottom: 6rem;
 }
 
 header{
@@ -222,4 +187,72 @@ header{
 
 .social-media i:hover{
     color: #6c03a5;
+}
+
+#conhecimentos i{
+    color: #6c03a5;
+}
+
+#conhecimentos a.link{
+    font-size: 1.2rem;
+    font-family: var(--font-action);
+    color: #6c03a5;
+}
+
+h1.linha-roxa{
+    font-family: var(--font-primary);
+}
+
+#projetos{
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#projetos .cards{
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px; 
+    transition: all ease-out .5s; 
+}
+
+.card1{
+    background: url(../assets/projeto1.jpg);
+}
+
+.card-info{
+    opacity: 0;
+    
+}
+
+.card-info:hover{
+    text-decoration: none;
+    border-radius: 10px; 
+    transition: all 0.5s;
+    padding: 15px;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);   
+}
+
+#destaque h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #6c03a5;
+}
+
+#clientes .caixa{
+    width: 100%;
+    height: 5rem;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#clientes .caixa img{
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+#clientes .caixa img:hover{
+    filter: none;
+    opacity: 1;
 }

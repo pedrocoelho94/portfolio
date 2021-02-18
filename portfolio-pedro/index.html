@@ -21,22 +21,49 @@
 </head>
 
 <body>
-    <div class="container-teste">
+                <!-- HEADER -->
+                <div id="header">
+                    <nav id="menu" class="navbar fixed-top navbar-expand-lg transparent">
+                        <div class="container-lg">
+                            <!--Logo-->
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/android-chrome-192x192.png" width="50" class="img-fluid" alt="">
+                            </a>
+                            <!--Hamburguer-->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                            <!--Conteúdo Menu-->
+                            
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link cor-fixa" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link cor-fixa" href="#">Sobre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link cor-fixa" href="#">Serviços</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link cor-fixa" href="#">Portfólio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link cor-fixa pr-0" href="#">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>          
+            </div>       
+            <!-- //HEADER -->
 
-    
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>fechar</span>
-        </div>
-
-
-        <header>
+        <header class="bloco">
             <div class="img-wrapper">
                 <img src="assets/dev-img-medium.jpg" alt="">
             </div>   
-                <div class="container">
+                <div class="container-lg">
                     <div class="banner">
                             <h1>Web Developer Front End</h1>  
                             <p>Pedro Coelho</p>
@@ -45,25 +72,318 @@
                 </div>   
         </header>
 
-        <div class="sidebar">
-            <nav>
-                <ul class="menu navbar-nav">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
-                </ul>
-            </nav>
-            <div class="social-media">
-                <a href=""><i class="fab fa-github-alt fa-2x"></i></a>
-                <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
-                <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        </section>
+        <!--
+        <section class="sessao-conhecimentos">
+            <div class="sessao-header">
+                <h1>Conhecimentos</h1>
             </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5 fa-2x"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ullam quas minus nesciunt suscipit placeat ab sapiente odio, temporibus a architecto ad! Voluptatum quo repellendus dolor consequatur autem rerum cumque.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quas vitae iusto, sequi similique velit delectus sapiente aliquam reiciendis odit neque dolores dolor, facere tenetur ducimus inventore nostrum dolore labore.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fas fa-pencil-alt fa-2x"></i>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto nisi, atque dolorem quaerat, fuga velit, ducimus molestias veniam vitae rem. Tenetur dolorem commodi vitae omnis ullam nisi eveniet minus.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js fa-2x"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quod consectetur nemo animi iusto nostrum earum deserunt. Asperiores, ea unde veniam suscipit pariatur id eos eum. Vel ipsum hic perferendis!</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-bootstrap fa-2x"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iure quidem aliquam delectus mollitia, reprehenderit ipsa, distinctio doloribus, tempora aperiam magnam minus corrupti at repellendus necessitatibus odio ad doloremque architecto!</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github fa-2x"></i>
+                        <h3>Git e GitHub</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, sed. Ab veritatis dolorum cumque quia ullam quas, voluptatem facere eligendi. Commodi eveniet error sapiente soluta alias placeat, in id voluptates.</p>
+                    </div>
+                </div>
+            </div>
+             -->
+        </section>
+       <!-- CONHECIMENTOS -->
+        <section id="conhecimentos">
+            <div class="container-lg bloco">
+                <h1 class="display-5 linha-roxa d-none">Conhecimentos</h1>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <h2 class="display-4">As melhores soluções para o seu site</h2>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam saepe ad exercitationem consequuntur ratione doloremque iusto sunt illum, minus porro, similique, quasi vel repudiandae quod animi possimus in ut atque!</p>
+                        <a href="" class="btn text-u link pl-0">Entre em Contato <i class="fas fa-long-arrow-alt-right pl-3"></i></a>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 mb-4">
+                                <div class="d-flex">
+                                    <i class="fab fa-html5 fa-2x mr-2"></i>
+                                    <h3>HTML 5</h3>
+                                </div>
+                                <hr>
+                                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum culpa, ab quasi mollitia quidem est quibusdam veniam sit.</p>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 mb-4">
+                                <div class="d-flex">
+                                    <i class="fab fa-css3-alt fa-2x mr-2"></i>
+                                    <h3>CSS 3</h3>
+                                </div>
+                                <hr>
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officia illo doloribus perferendis nostrum fugit .</p>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 mb-4">
+                                <div class="d-flex">
+                                    <i class="fab fa-bootstrap fa-2x mr-2"></i>
+                                    <h3>Bootstrap</h3>
+                                </div>
+                                <hr>
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi expedita odit repudiandae nobis iusto. Quam, inventore sequi.</p>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 mb-4">
+                                <div class="d-flex">
+                                    <i class="fab fa-js-square fa-2x mr-2"></i>
+                                    <h3>Javascript</h3>
+                                </div>
+                                <hr>
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam et laborum quas sed perferendis dolorem praesentium minus obcaecati! Quod cupiditate officiis doloribus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+ 
+            </div>
+            
+        </section>
+        <!-- //CONHECIMENTOS -->
+
+        <!-- JUMBOTRON DESTAQUE -->
+        <section id="destaque">
+            <div class="container-lg bloco">
+                <div class="jumbotron shadow bg-white py-4">
+                    <div class="row">
+                        <div class="col-sm-3 col-6 text-center mb-4">
+                            <img src="assets/ux.svg" width="50" alt="">
+                            <h2 class="mb-0 py-1">10+</h2>
+                            <p class="lead mb-0">Clientes Satisfeitos</p>       
+                        </div>
+
+                        <div class="col-sm-3 col-6 text-center mb-4">
+                            <img src="assets/clipboard.svg" width="50" alt="">
+                            <h2 class="mb-0 py-1">25+</h2>
+                            <p class="lead mb-0">Projetos Finalizados</p>       
+                        </div>
+
+                        <div class="col-sm-3 col-6 text-center mb-4">
+                            <img src="assets/laptop.svg" width="50" alt="">
+                            <h2 class="mb-0 py-1">0</h2>
+                            <p class="lead mb-0">Reclamações</p>       
+                        </div>
+
+                        <div class="col-sm-3 col-6 text-center mb-4">
+                            <img src="assets/medal.svg" width="50" alt="">
+                            <h2 class="mb-0 py-1">3</h2>
+                            <p class="lead mb-0">Prêmio Ganhos</p>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- //JUMBOTRON DESTAQUE -->
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <div class="container-lg py-5 bloco">
+                <h1 class="linha-roxa text-white text-center">Últimos Projetos</h1>
+                <p class="lead text-center text-white pb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam voluptates eveniet magnam recusandae earum quasi veniam sunt eligendi ullam aspernatur provident, laborum incidunt beatae dicta enim hic sed doloremque modi!</p>
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6 col-12 mb-4">
+                        <div class="cards card1"> 
+                                <a href="" class="card-info text-white h-100 d-flex flex-column justify-content-end">
+                                    <h2>Tiezzer</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore asperiores vitae, corporis rem odio placeat at.</p>
+                                    <div class="btn btn-primary">Saiba Mais</div>
+                                </a>                          
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-12 mb-4">
+                        <div class="cards card1"> 
+                                <a href="" class="card-info text-white h-100 d-flex flex-column justify-content-end">
+                                    <h2>Tiezzer</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore asperiores vitae, corporis rem odio placeat at.</p>
+                                    <div class="btn btn-primary">Saiba Mais</div>
+                                </a>                          
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-12 mb-4">
+                        <div class="cards card1"> 
+                                <a href="" class="card-info text-white h-100 d-flex flex-column justify-content-end">
+                                    <h2>Tiezzer</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore asperiores vitae, corporis rem odio placeat at.</p>
+                                    <div class="btn btn-primary">Saiba Mais</div>
+                                </a>                          
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-12 mb-4">
+                        <div class="cards card1"> 
+                                <a href="" class="card-info text-white h-100 d-flex flex-column justify-content-end">
+                                    <h2>Tiezzer</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore asperiores vitae, corporis rem odio placeat at.</p>
+                                    <div class="btn btn-primary">Saiba Mais</div>
+                                </a>                          
+                        </div>
+                    </div>
+
+
+                    
+                    
+
+                   
+
+                    
+                </div>
+
+
+
+
+
+
+
+            
+
+            </div>
+
+        </section>
+        <!-- PROJETOS -->
+
+
+        <!-- ClIENTES -->
+        <section id="clientes">
+            <div class="container-lg bloco">
+                <h1 class="linha-roxa text-center mb-4">Conheça alguns de nossos clientes</h1>
+                <div class="row">
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo1.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo2.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo3.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo4.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo5.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo6.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo7.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo8.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo9.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo1.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo2.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+                     <div class="col-lg-2 col-sm-3 col-6 mb-3">
+                        <div class="caixa shadow bg-white">
+                            <img src="assets/clientes/logo3.svg" height="100%" width="100%" class="p-1" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- //CLIENTES -->
+    
+
+    <section id="rodapé">
+        <div class="container-lg">
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
 
-    </div>
+    </section>
+    
 
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
