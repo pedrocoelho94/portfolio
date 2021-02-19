@@ -4,7 +4,19 @@
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media(max-width: 767.98px) {
-    
+    #rodape .email{
+        padding: 60px 30px 50px 30px;
+    }
+
+    #rodape .email form{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #rodape .email img{
+        width: 90px;
+        top: -40;
+    }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media /*(min-width: 768px) and*/ (max-width: 991.98px) {

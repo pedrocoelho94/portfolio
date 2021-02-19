@@ -1,6 +1,10 @@
 :root{
-    --primary: red;
-    --secondary: black;
+    --primary: #6c03a5;
+    --primary-dark: #8656a0;
+    --secondary: #364F6B;
+    --light: #f0f0f0;
+    --medium: #cacaca;
+    --dark: #a2a2a2;
     --font-primary: "Baloo Da 2", serif;
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;

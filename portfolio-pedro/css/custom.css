@@ -137,21 +137,6 @@ header{
     }
 }
 
-.sidebar{
-    width: 20rem;
-    height: 100vh;
-    background-color: #fff;
-    opacity: 0.95;
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    transition: all 0.5s;
-}
-
-.show-menu .sidebar{
-    right: 0;
-}
-
 .menu{
     position: absolute;
     top: 40%;
@@ -164,35 +149,6 @@ header{
     margin-bottom: .5rem;
 }
 
-.menu-link{
-    font-family: var(--font-action);
-    font-size: 2rem;
-    color: #555;
-    transition: color 0.5s;
-}
-
-.menu-link:hover{
-    color: #6c03a5;
-    text-decoration: none;
-}
-
-.social-media{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.social-media i{
-    color: #555;
-    border-radius: 50%;
-}
-
-.social-media i:hover{
-    color: #6c03a5;
-}
 
 #conhecimentos i{
     color: #6c03a5;
@@ -260,4 +216,82 @@ h1.linha-roxa{
 #clientes .caixa img:hover{
     filter: none;
     opacity: 1;
+    cursor: pointer;
+}
+
+#servicos span.badge{
+    font-weight: 400;
+}
+
+#servicos .element-item img{
+    border-radius: 5px;
+    transition: all ease-out 0.2;
+}
+
+#servicos .element-item img:hover{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+#servicos .button-group{
+    margin-bottom: 30px;
+}
+
+#servicos .button-group button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+}
+
+#servicos .button-group button + button{ /* Margin em todos, menos no primeiro item*/
+    margin-left: 30px;
+}
+
+#servicos .button-group button.active{
+    color: var(--primary)
+}
+
+#rodape{
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#rodape-info{
+    background:#000;
+}
+
+#rodape .email{
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+}
+
+#rodape .email img{
+    position: absolute;
+    left: 30px;
+    top: -30px;
+}
+
+#rodape .email form{
+    width: 60%;
+    display: flex;
+}
+
+#rodape .email input.form-control,
+#rodape .email input.form-control::placeholder{
+    background: none;
+    color: #fff;
+}
+
+#rodape-info{
+    color: #fff;
 }
